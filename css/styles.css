@@ -180,6 +180,11 @@ header {
 .envelop-icon {
     width: 16px;
     height: 12px;
+   
+}
+.picture:hover+.mail {
+    color: var(--second-header-color);
+    
 }
 
 /* .icon-envelop::before {
@@ -474,6 +479,13 @@ header {
     padding-top: 60px;
     padding-bottom: 60px;
 }
+.footer-all {
+    display: flex;
+}
+.footer-info {
+    width: 300px;
+
+}
 .footer-logo{
     display: inline-block;
     margin-bottom: 20px;
@@ -505,6 +517,14 @@ header {
 .footer-tel:focus {
     color: var(--second-header-color);
 }
+.footer-join {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--local-color);
+}
+
+
 /*------------PORTFOLIO-MAIN-------------*/
 
 /*-----------PORTFOLIO-FILTER------------*/
