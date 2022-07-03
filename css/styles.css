@@ -523,6 +523,51 @@ header {
     line-height: 1.14;
     color: var(--local-color);
 }
+.join {
+    margin-bottom: 20px;
+}
+
+
+
+
+
+.join-list {
+    display: flex;
+    justify-content: center;
+}
+.join-item {
+    width: 44px;
+    height: 44px;
+    margin-right: 10px;
+}
+.join-item:last-child {
+    margin-right: 0px;
+}
+.join-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: var(--local-color); */
+    fill: var(--local-color);
+}
+.join-link:hover,
+.join-link:focus {
+    background-color: var(--second-header-color);
+    fill: var(--local-color);
+}
+.join-icon {
+    width: 20px;
+    height: 20px;
+}
+
+
+
+
+
+
 
 
 /*------------PORTFOLIO-MAIN-------------*/
