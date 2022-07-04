@@ -137,14 +137,10 @@ header {
         color: var(--header-color);
         text-decoration: none;
 }
-/* .header-mail:hover,
+.header-mail:hover,
 .header-mail:focus {
     color: var(--second-header-color);
-} */
-/* .envelop-icon:hover .header-mail,
-.envelop-icon:focus .header-mail {
-    color: var(--second-header-color);
-} */
+}
 .header-tel {
     font-weight: 500;
     font-size: 14px;
@@ -152,6 +148,7 @@ header {
     letter-spacing: 0.02em;
     color: var(--header-color);
     text-decoration: none;
+    margin-left: 10px;
 }
 .header-tel:hover,
 .header-tel:focus {
@@ -177,15 +174,31 @@ header {
 .envelop-link {
     fill: var(--header-color);
 }
+.envelop-link:hover {
+    fill: var(--second-header-color);
+}
 .envelop-icon {
     width: 16px;
     height: 12px;
-   
 }
-.picture:hover+.mail {
-    color: var(--second-header-color);
-    
+.list-tel {
+    display: flex;
 }
+.tel-icon {
+    width: 10px;
+    height: 16px;
+}
+.tel-link {
+    width: 10px;
+    height: 16px;
+
+}
+
+/* .item-tel {
+    margin-right: 20px;
+} */
+
+   /* <use href="./images/icons.svg#icon-footer-icon-bg"></use> */
 
 /* .icon-envelop::before {
     display: inline-block;
@@ -328,8 +341,6 @@ header {
 .img-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-
-
 /*-------------MAIN-ASIDE-------------*/
 .aside .container {
     margin-left: auto;
@@ -416,7 +427,6 @@ header {
     background-color: var(--second-header-color);
     fill: var(--local-color);
 }
-
 /*---------COMMERCIAL-------------*/
 .commercial {
     padding-top: 94px;
@@ -526,14 +536,9 @@ header {
 .join {
     margin-bottom: 20px;
 }
-
-
-
-
-
 .join-list {
     display: flex;
-    justify-content: center;
+    justify-content: center;  
 }
 .join-item {
     width: 44px;
@@ -550,8 +555,7 @@ header {
     border-radius: 50%;
     align-items: center;
     justify-content: center;
-    /* background-color: var(--local-color); */
-    fill: var(--local-color);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 .join-link:hover,
 .join-link:focus {
@@ -561,18 +565,10 @@ header {
 .join-icon {
     width: 20px;
     height: 20px;
+    fill: var(--local-color);
 }
-
-
-
-
-
-
-
-
-/*------------PORTFOLIO-MAIN-------------*/
-
-/*-----------PORTFOLIO-FILTER------------*/
+/*-----------PORTFOLIO-MAIN-----------*/
+/*----------PORTFOLIO-FILTER----------*/
 .portfolio-filter {
     padding-top: 100px;
     padding-bottom: 94px; 
@@ -606,7 +602,7 @@ header {
 .portfolio-item:not(:nth-child(5n)) {
     margin-right: 8px;
 }
-/*-----------PORTFOLIO-CONTENT-----------*/
+/*-----------PORTFOLIO-CONTENT---------*/
 .content-list {
     display: flex;
     flex-wrap: wrap;
