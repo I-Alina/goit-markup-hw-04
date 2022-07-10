@@ -128,7 +128,7 @@ header {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-/*------------HEADER-CONTACTS------------*/
+/*-------HEADER-CONTACTS------------*/
 .header-mail {
         font-weight: 500;
         font-size: 14px;
@@ -187,11 +187,12 @@ header {
 .tel-icon {
     width: 10px;
     height: 16px;
+    fill: currentColor;
 }
 .tel-link {
     width: 10px;
     height: 16px;
-
+    /* fill: var(--header-color); */
 }
 
 /* .item-tel {
