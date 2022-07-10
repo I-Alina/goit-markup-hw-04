@@ -18,8 +18,7 @@ body {
     letter-spacing: 0.03em;
     color: var(--header-color);
 }
-/*--------------UTILITIES-----------------*/
-
+/*--------UTILITIES------------*/
 p,
 h1,
 h2,
@@ -88,7 +87,7 @@ header {
     display: flex;
     align-items: center;
 }
-/*-------------HEADER-LOGO-FOOTER-------*/
+/*-------HEADER-LOGO-FOOTER-------*/
 .header-logo,
 .footer-logo {
         color: var(--second-header-color);
@@ -100,13 +99,13 @@ header {
 .header-logo {
     margin-right: 93px;
 }
-/*-------------HEADER-NAV-------------*/
+/*---------HEADER-NAV-------------*/
 .header-nav a {
         font-weight: 500;
         font-size: 14px;
         line-height: 1.14;
         letter-spacing: 0.02em;
-        color: var(--main-title-color);text-decoration: none;
+        text-decoration: none;
 }
 .header-nav a:hover,
 .header-nav a:focus {
@@ -127,8 +126,20 @@ header {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
+    color: var(--main-title-color);
 }
-/*-------HEADER-CONTACTS------------*/
+/*------HEADER-CONTACTS------------*/
+.header-list {
+    display: flex;
+    margin-left: auto;
+}
+.item a {
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+.header-list .item+.item {
+    margin-left: 30px;
+}
 .header-mail {
         font-weight: 500;
         font-size: 14px;
@@ -141,6 +152,12 @@ header {
 .header-mail:focus {
     color: var(--second-header-color);
 }
+.envelop-icon {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
 .header-tel {
     font-weight: 500;
     font-size: 14px;
@@ -148,77 +165,18 @@ header {
     letter-spacing: 0.02em;
     color: var(--header-color);
     text-decoration: none;
-    margin-left: 10px;
 }
 .header-tel:hover,
 .header-tel:focus {
     color: var(--second-header-color);
-}
-.header-list {
-    display: flex;
-    margin-left: auto;
-}
-.header-list .item + .item {
-    margin-left: 50px;
-}
-.item a {
-    padding-top: 32px;
-    padding-bottom: 32px;
-}
-.list-envelop {
-    display: flex;
-}
-.item-envelop {
-    margin-right: 10px;
-}
-.envelop-link {
-    fill: var(--header-color);
-}
-.envelop-link:hover {
-    fill: var(--second-header-color);
-}
-.envelop-icon {
-    width: 16px;
-    height: 12px;
-}
-.list-tel {
-    display: flex;
-}
+} 
 .tel-icon {
     width: 10px;
     height: 16px;
+    margin-right: 10px;
     fill: currentColor;
 }
-.tel-link {
-    width: 10px;
-    height: 16px;
-    /* fill: var(--header-color); */
-}
-
-/* .item-tel {
-    margin-right: 20px;
-} */
-
-   /* <use href="./images/icons.svg#icon-footer-icon-bg"></use> */
-
-/* .icon-envelop::before {
-    display: inline-block;
-    content: " ";
-    width: 16px;
-    height: 12px;
-    background-image: url('../images/envelope-imail.svg');
-    margin-right: 10px;
-} */
-/* .icon-phone::before {
-        display: inline-block;
-        content: " ";
-        width: 10px;
-        height: 16px;
-        background-image: url('../images/mobile-phone.svg');
-        margin-right: 10px;
-} */
-
-/*-------------MAIN-TITLE-------------*/
+/*-----------MAIN-TITLE------------*/
 .title-title {
         display: inline-block;
         font-weight: 900;
@@ -263,7 +221,7 @@ header {
     background-repeat: no-repeat;
     background-position: center;
 }
-/*------------MAIN-TEXT-------------*/
+/*-----------MAIN-TEXT-------------*/
 .text {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -319,7 +277,7 @@ header {
 .icon-astronaut::before {
     background-image: url(../images/astronaut.svg)
 }
-/*-------------MAIN-IMG-------------*/
+/*------------MAIN-IMG-------------*/
 .img {
     padding-top: 0;
     padding-bottom: 94px;
@@ -342,7 +300,7 @@ header {
 .img-item:not(:nth-child(3n)) {
     margin-right: 30px;
 }
-/*-------------MAIN-ASIDE-------------*/
+/*----------MAIN-ASIDE-------------*/
 .aside .container {
     margin-left: auto;
     margin-right: auto;
@@ -568,8 +526,8 @@ header {
     height: 20px;
     fill: var(--local-color);
 }
-/*-----------PORTFOLIO-MAIN-----------*/
-/*----------PORTFOLIO-FILTER----------*/
+/*--------PORTFOLIO-MAIN-----------*/
+/*-------PORTFOLIO-FILTER----------*/
 .portfolio-filter {
     padding-top: 100px;
     padding-bottom: 94px; 
@@ -603,7 +561,7 @@ header {
 .portfolio-item:not(:nth-child(5n)) {
     margin-right: 8px;
 }
-/*-----------PORTFOLIO-CONTENT---------*/
+/*------PORTFOLIO-CONTENT---------*/
 .content-list {
     display: flex;
     flex-wrap: wrap;
